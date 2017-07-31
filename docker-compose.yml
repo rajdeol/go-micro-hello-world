@@ -1,0 +1,50 @@
+###################################
+# Cousul will be used to register service which other services and discover
+consul:
+  image: consul:latest
+  command: consul agent -dev -log-level=warn -ui -client=0.0.0.0
+  hostname: consul
+  ports:
+    - "8500:8500"
+##################################
+# Message broker to interact with other systems
+rabbit:
+  image: rabbitmq:management
+  hostname: rabbit
+  ports:
+    - "5672:5672"
+    - "15672:15672"
+
+###################################
+# Micro web to view and query service from web dashboard
+microweb:
+  image: microhq/micro
+  command: web --address=0.0.0.0:8080
+  ports:
+    - "80:8080"
+  environment:
+    - MICRO_REGISTRY=consul
+    - MICRO_REGISTRY_ADDRESS=consul
+    - MICRO_API_NAMESPACE=gomicro.api
+  links:
+    - consul
+    - service.helloworld
+
+###################################
+# Our basic Helloworld service
+service.helloworld:
+  build: .
+  command: gin --immediate --path /go/src/github.com/rajdeol/go-micro-hello-world go run main.go
+  ports:
+    - "3000:3000"
+    - "8081:8080"
+  volumes:
+    - .:/go/src/github.com/rajdeol/go-micro-hello-world
+  environment:
+    - MICRO_REGISTRY=consul
+    - MICRO_REGISTRY_ADDRESS=consul
+    - MICRO_BROKER=rabbitmq
+    - MICRO_BROKER_ADDRESS=amqp://guest:guest@rabbit:5672
+  links:
+    - consul
+    - rabbit

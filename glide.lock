@@ -1,0 +1,103 @@
+hash: f7ce7935097763d872d6f83aafd7428a730ffc9ec42120f8bd197dc7cd97c63d
+updated: 2017-07-31T02:44:19.803887562Z
+imports:
+- name: github.com/go-log/log
+  version: 37e2e1f19306361e1fc152a1839f1236149cb4e4
+  subpackages:
+  - log
+- name: github.com/golang/protobuf
+  version: 748d386b5c1ea99658fd69fe9f03991ce86a90c1
+  subpackages:
+  - proto
+- name: github.com/hashicorp/consul
+  version: b97ae3689610227a7fe1c2d8711c716a875aabf1
+  subpackages:
+  - api
+  - watch
+- name: github.com/hashicorp/go-cleanhttp
+  version: 3573b8b52aa7b37b9358d966a898feb387f62437
+- name: github.com/hashicorp/go-rootcerts
+  version: 6bb64b370b90e7ef1fa532be9e591a81c3493e00
+- name: github.com/hashicorp/serf
+  version: bbeddf0b3ab3072a60525afbd6b6f47d33839eee
+  subpackages:
+  - coordinate
+- name: github.com/micro/cli
+  version: 3d2263bb092286dde294a31049c92665f8373820
+- name: github.com/micro/go-log
+  version: cbfa9447f9b655f8e66583237e51f40ca9bff860
+- name: github.com/micro/go-micro
+  version: 8264e90bce1a035666c12f3cf136ce30757843ff
+  subpackages:
+  - broker
+  - broker/codec
+  - broker/codec/json
+  - broker/http
+  - client
+  - cmd
+  - codec
+  - codec/jsonrpc
+  - codec/protorpc
+  - errors
+  - metadata
+  - registry
+  - registry/consul
+  - registry/mdns
+  - selector
+  - selector/cache
+  - server
+  - server/debug
+  - server/debug/proto
+  - transport
+  - transport/codec
+  - transport/http
+- name: github.com/micro/go-plugins
+  version: 248a965ce93f8fee5f93fd9731eaa9ef674a50ae
+  subpackages:
+  - broker/rabbitmq
+  - registry/kubernetes
+  - registry/kubernetes/client
+  - registry/kubernetes/client/api
+  - registry/kubernetes/client/watch
+- name: github.com/micro/mdns
+  version: cdf30746f9f70dc7a366d3d885792a092fd83102
+- name: github.com/micro/misc
+  version: d090a0434084e482de5c73e8892b56d291881ec9
+  subpackages:
+  - lib/addr
+  - lib/net
+  - lib/tls
+- name: github.com/miekg/dns
+  version: 0f3adef2e2201d72e50309a36fc99d8a9d1a4960
+- name: github.com/mitchellh/go-homedir
+  version: b8bc1bf767474819792c23f32d8286a45736f1c6
+- name: github.com/mitchellh/hashstructure
+  version: 2bca23e0e452137f789efbc8610126fd8b94f73b
+- name: github.com/nu7hatch/gouuid
+  version: 179d4d0c4d8d407a32af483c2354df1d2c91e6c3
+- name: github.com/pborman/uuid
+  version: e790cca94e6cc75c7064b1332e63811d4aae1a53
+- name: github.com/pkg/errors
+  version: c605e284fe17294bda444b34710735b29d1a9d90
+- name: github.com/sirupsen/logrus
+  version: 181d419aa9e2223811b824e8f0b4af96f9ba9302
+- name: github.com/streadway/amqp
+  version: 2cbfe40c9341ad63ba23e53013b3ddc7989d801c
+- name: golang.org/x/crypto
+  version: 558b6879de74bc843225cde5686419267ff707ca
+  subpackages:
+  - ssh/terminal
+- name: golang.org/x/net
+  version: f5079bd7f6f74e23c4d65efa0f4ce14cbd6a3c0f
+  subpackages:
+  - bpf
+  - context
+  - internal/iana
+  - internal/socket
+  - ipv4
+  - ipv6
+- name: golang.org/x/sys
+  version: 0f826bdd13b500be0f1d4004938ad978fcc6031e
+  subpackages:
+  - unix
+testImports: []

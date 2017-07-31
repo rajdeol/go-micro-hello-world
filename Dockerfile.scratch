@@ -1,0 +1,7 @@
+FROM alpine:latest
+
+COPY build/helloworld /helloworld
+
+EXPOSE 8080
+
+CMD ["/helloworld"]

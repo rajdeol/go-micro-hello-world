@@ -1,5 +1,5 @@
-hash: f7ce7935097763d872d6f83aafd7428a730ffc9ec42120f8bd197dc7cd97c63d
-updated: 2017-07-31T02:44:19.803887562Z
+hash: 9171ffa8f54d28885ab9b6c77109d1b3ac194e40c66177717dc00fc9e67fe201
+updated: 2017-08-01T13:30:43.55410866Z
 imports:
 - name: github.com/go-log/log
   version: 37e2e1f19306361e1fc152a1839f1236149cb4e4
@@ -10,7 +10,7 @@ imports:
   subpackages:
   - proto
 - name: github.com/hashicorp/consul
-  version: b97ae3689610227a7fe1c2d8711c716a875aabf1
+  version: c17690e80b01c84fcaf7b2e1b84222ace27720cf
   subpackages:
   - api
   - watch
@@ -97,7 +97,7 @@ imports:
   - ipv4
   - ipv6
 - name: golang.org/x/sys
-  version: 0f826bdd13b500be0f1d4004938ad978fcc6031e
+  version: b892924b68aa53038e8a55b255ee0d8391e8eec5
   subpackages:
   - unix
 testImports: []

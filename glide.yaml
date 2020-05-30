@@ -1,14 +1,14 @@
 package: github.com/rajdeol/go-micro-hello-world
 import:
-- package: github.com/micro/go-micro
-  version: ^0.1.2
-  subpackages:
-  - server
-- package: github.com/micro/go-plugins
-  version: ^0.3.0
-  subpackages:
-  - broker/rabbitmq
-  - registry/kubernetes
-- package: golang.org/x/net
-  subpackages:
-  - context
+  - package: github.com/micro/go-micro
+    version: ^0.1.2
+    subpackages:
+      - server
+  - package: github.com/micro/go-plugins
+    version: ^0.3.0
+    subpackages:
+      - broker/rabbitmq
+      - registry/kubernetes
+  - package: golang.org/x/net
+    subpackages:
+      - context

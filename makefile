@@ -10,7 +10,7 @@ APPDIR=/go/src/github.com/$(SERVICE_IMAGE_NAME)
 # The default docker command to use
 DOCKERRUN=docker run -i --rm
 
-GOLANG=golang:1.8
+GOLANG=golang:1.14
 
 # images
 SERVICE_IMAGE_NAME=rajdeol/go-micro-hello-world

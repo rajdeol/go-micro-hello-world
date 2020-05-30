@@ -1,4 +1,4 @@
-FROM golang:1.8
+FROM golang:1.14
 
 # Protoc version to install
 ENV VERSION 3.3.0

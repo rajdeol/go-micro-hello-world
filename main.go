@@ -12,7 +12,7 @@ import (
 	_ "github.com/micro/go-plugins/registry/kubernetes"
 )
 
-var serviceName = "service.helloworld"
+var serviceName = "service-helloworld"
 
 func main() {
 	log.WithFields(log.Fields{

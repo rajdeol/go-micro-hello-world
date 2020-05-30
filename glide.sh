@@ -7,4 +7,4 @@ docker run --rm \
     -v ~/.ssh/id_rsa.pub:/root/.ssh/id_rsa.pub \
     -v ~/.ssh/known_hosts:/root/.ssh/known_hosts \
     -w "/go/src/github.com/rajdeol/go-micro-hello-world" \
-    rajdeol/golang-glide:go1.8-gl-0.12.3 ${*}
+    rajdeol/golang-glide:go1.14-gl-0.13.3 ${*}
